@@ -86,21 +86,21 @@
           <h3><i class="fas fa-laptop-code"></i>언어</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <img src="/api/placeholder/24/24" alt="Java" class="skill-icon">
+              <i class="fa-brands fa-java skill-icon"></i>
               <div>
                 <div class="skill-name">Java</div>
                 <div class="skill-desc">객체지향 프로그래밍, 컬렉션 프레임워크</div>
               </div>
             </li>
             <li class="skill-item">
-              <img src="/api/placeholder/24/24" alt="JavaScript" class="skill-icon">
+                <i class="fa-brands fa-js skill-icon"></i>
               <div>
-                <div class="skill-name">JavaScript</div>
+                <div class="skill-name ">JavaScript</div>
                 <div class="skill-desc">웹 기능 구현, DOM 조작</div>
               </div>
             </li>
             <li class="skill-item">
-              <img src="/api/placeholder/24/24" alt="HTML/CSS" class="skill-icon">
+                <i class="fa-brands fa-html5 skill-icon"></i>
               <div>
                 <div class="skill-name">HTML/CSS</div>
                 <div class="skill-desc">반응형 웹 디자인, 기본 레이아웃</div>
@@ -113,14 +113,14 @@
           <h3><i class="fas fa-cubes"></i>프레임워크</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <img src="/api/placeholder/24/24" alt="Spring" class="skill-icon">
+              <img src="images/spring.png" alt="Spring" class="skill-icon">
               <div>
                 <div class="skill-name">Spring</div>
                 <div class="skill-desc">DI, AOP, MVC 패턴 이해</div>
               </div>
             </li>
             <li class="skill-item">
-              <img src="/api/placeholder/24/24" alt="Spring Boot" class="skill-icon">
+              <img src="images/springBoot.png" alt="Spring Boot" class="skill-icon">
               <div>
                 <div class="skill-name">Spring Boot</div>
                 <div class="skill-desc">REST API 구축 및 게시판 구현 경험</div>
@@ -184,12 +184,15 @@
       <div class="projects-container">
         <!-- 프로젝트 1 -->
         <div class="project-card">
-          <img src="/api/placeholder/800/400" alt="프로젝트 1 스크린샷" class="project-img">
+          <div class="project-images">
+            <img src="images/project_1.jpg" alt="프로젝트 1 스크린샷" class="project-img-half">
+            <img src="images/project_2.jpg" alt="프로젝트 1 스크린샷" class="project-img-half">
+          </div>
           <div class="project-details">
-            <h3 class="project-title">커뮤니티 게시판 서비스</h3>
+            <h3 class="project-title">즉석 번개모임 매칭 플랫폼</h3>
             <div class="project-meta">
-              <span class="project-meta-item"><i class="far fa-calendar-alt"></i>2024.01 - 2024.03</span>
-              <span class="project-meta-item"><i class="fas fa-users"></i>팀 프로젝트 (4인)</span>
+              <span class="project-meta-item"><i class="far fa-calendar-alt"></i>2025.03.17 ~ 2025.04.07</span>
+              <span class="project-meta-item"><i class="fas fa-users"></i>팀 프로젝트 (5인)</span>
             </div>
             <div class="project-tech">
               <span>Java</span>
@@ -199,19 +202,22 @@
               <span>HTML/CSS</span>
             </div>
             <div class="project-desc">
-              <p>회원가입, 로그인, 게시글 CRUD, 댓글, 검색, 페이징 기능을 갖춘 커뮤니티 게시판 서비스입니다.</p>
-              <p><strong>문제:</strong> 사용자 인증 및 권한 관리에서 보안 취약점 발생</p>
-              <p><strong>해결:</strong> Spring Security를 도입하여 JWT 기반 인증 시스템으로 개선</p>
-              <p><strong>결과:</strong> 보안성 강화 및 사용자 경험 향상, 코드 유지보수성 개선</p>
+              <p>날씨와 취향에 따라 추천하는 즉석 번개모임 플랫폼</p>
+              <p><strong>핵심 기능:</strong> 실시간 번개모임 매칭을 중심으로, 모임 추천, 생성, 참가, 후기 작성, 채팅 및 마이페이지 기능을 통합 구현하여 사용자 편의성과 커뮤니티 활성화를 강화한 플랫폼 구축</p>
             </div>
             <div class="project-roles">
-              <h4>맡은 역할</h4>
-              <ul>
-                <li>회원 관리 기능 개발 (회원가입, 로그인, 프로필 수정)</li>
-                <li>게시글 CRUD 및 댓글 기능 구현</li>
-                <li>프론트엔드 UI 개발 및 백엔드 연동</li>
-              </ul>
-            </div>
+                <h4>맡은 역할</h4>
+                <ul>
+                  <li>회원가입 및 로그인 화면 제작 및 기능 구현</li>
+                  <li>회원정보 공개여부 설정 모달 및 프로필 이미지 변경 모달 제작</li>
+                  <li>거부사유 안내 모달 제작</li>
+                  <li>메인 화면 구성 (모임 리스트 조회 및 카테고리별 필터링 기능)</li>
+                  <li>날씨 API를 활용한 실내/야외 활동 추천 배너 구현</li>
+                  <li>검색 기능 개발 (게시글 키워드 기반 필터링)</li>
+                  <li>웹소켓 기반 1:1 실시간 채팅 기능 개발</li>
+                </ul>
+              </div>
+              
             <div class="project-links">
               <a href="#" target="_blank"><i class="fab fa-github"></i>GitHub</a>
               <a href="#" onclick="openTeamModal1()"><i class="fas fa-external-link-alt"></i>View Project Overview</a>

@@ -311,11 +311,33 @@ body {
     transform: translateY(-5px);
 }
 
-.project-img {
+.project-images {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.project-img-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-img-half {
     width: 100%;
     height: 240px;
     object-fit: cover;
+    border-radius: 8px;
 }
+
+.img-caption {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
 
 .project-details {
     padding: 1.5rem;
